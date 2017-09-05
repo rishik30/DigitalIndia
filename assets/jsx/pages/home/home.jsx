@@ -1,16 +1,9 @@
 import React from "react";
 
-import WebsiteAPI from "../../components/cms/api";
+// import WebsiteAPI from "../../components/cms/api";
 import Svg from "../../components/svg";
 import Splash from "../../components/splash";
 import Meta from "../../components/meta";
-
-import { Introduction } from "./_introduction.jsx";
-import { Information } from "./_information.jsx";
-import { ProjectEklavya } from "./_project-eklavya.jsx";
-import { LatestPublications } from "./_latest-publications.jsx";
-import { InclusiveIndia } from "./_inclusive-india.jsx";
-import { DonateNow } from "./_donate.jsx";
 
 export default class Home extends React.Component {
 	state = {

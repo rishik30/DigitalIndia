@@ -16,11 +16,9 @@
 			flex: 1;
 			flex-direction: column;
 			align-items: center;
-			padding: 50px 0px;
-			padding-bottom: 20px;
-			&.cta {
-				padding-top: 20px;
-				padding-bottom: 0px;
+			padding: 30px 0;
+			&.contact-info {
+				flex: 2;
 			}
 		}
 
@@ -152,10 +150,10 @@
 
 	.copyright {
 		position: relative;
-		padding: 20px 10px;
+		padding: 5px 0 10px;
 		display: flex;
 		justify-content: flex-end;
-		background-color: $color_grey;
+		background-color: $color_black;
 		flex-wrap: wrap;
 		font-size: $p2;
 		height: auto;
@@ -163,7 +161,6 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		line-height: 1;
-		color: $color_white;
 		@media(max-width: 500px){
 			justify-content: center;
 		}
@@ -173,34 +170,8 @@
  			text-align: center;
  			margin: 0 auto;
  			line-height: 1.5;
-			a {
-				// color: $color_skyblue;
-				font-weight: 600;
-			}
-			&.right {
-				position: absolute;
-				right: 25px;
-				top: 50%;
-				width: 250px;
-				text-align: center;
-				font-family: $font_body;
-				font-size: $p4;
-				transform: translate3d(0,-50%,0);
-        a {
-          color: $color_blue;
-        }
-				@media(max-width: 1200px){
-					width: 220px;
-				}
-				@media(max-width: 880px) {
-					width: 100%;
-					position: relative;
-					text-align: center;
-					margin: 5px;
-					right: 50%;
-					transform: translate3d(50%,0,0);
-				}
-			}
+			color: $color_white;
+			letter-spacing: 1px;
 		}
 	}
 }

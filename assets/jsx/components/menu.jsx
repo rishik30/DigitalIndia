@@ -23,52 +23,29 @@ export default class Menu extends React.Component {
 					<div className={"menu-items " + activeString}>
 						<li className="menu-item">
 							<Link to="/about" activeClassName="active" onClick={this._toggleMenu}>
-								About
+								Home
 							</Link>
 						</li>
 						<li className="menu-item">
 							<Link to="/projects" activeClassName="active" onClick={this._toggleMenu}>
-								Projects
+								About
 							</Link>
 						</li>
 						<li className="menu-item">
 							<Link to="/publications" activeClassName="active" onClick={this._toggleMenu}>
-								Publications
+								Resources
 							</Link>
 						</li>
 						<li className="menu-item">
 							<Link to="/careers" activeClassName="active" onClick={this._toggleMenu}>
-								Careers
+								Events
 							</Link>
 						</li>
 						<li className="menu-item">
 							<Link to="/donate" activeClassName="active" onClick={this._toggleMenu}>
-								Donate
+								Contact
 							</Link>
 						</li>
-						{/* <li className="menu-item">
-                            <Link to="/contact" activeClassName="active">Contact</Link>
-                        </li> */}
-						{/* <div className="to-right">
-
-                        </div> */}
-						<ul className="social-icons">
-							<li className="social-icon-item">
-								<a href="https://www.linkedin.com/company/indusaction" target="_blank">
-									<Svg src="/img/general/linkedin-icon.svg" className="social-icon" />
-								</a>
-							</li>
-							<li className="social-icon-item">
-								<a href="https://www.facebook.com/INDUSaction/" target="_blank">
-									<Svg src="/img/general/fb-icon.svg" className="social-icon" />
-								</a>
-							</li>
-							<li className="social-icon-item">
-								<a href="https://twitter.com/indusaction?lang=en" target="_blank">
-									<Svg src="/img/general/twitter-icon.svg" className="social-icon" />
-								</a>
-							</li>
-						</ul>
 					</div>
 				</ul>
 			</div>

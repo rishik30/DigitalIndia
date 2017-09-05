@@ -1,7 +1,7 @@
 import React from "react";
 import { resolve } from "react-resolver";
 
-import WebsiteAPI from "./components/cms/api";
+// import WebsiteAPI from "./components/cms/api";
 import Menu from "./components/menu";
 import Footer from "./components/footer";
 import Modal from "./components/modal";
@@ -35,4 +35,4 @@ class App extends React.Component {
 	}
 }
 
-export default resolve("website", () => WebsiteAPI.getWebsite())(App);
+export default resolve("website", () => {})(App);
