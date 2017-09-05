@@ -22,27 +22,27 @@ export default class Menu extends React.Component {
 					</li>
 					<div className={"menu-items " + activeString}>
 						<li className="menu-item">
-							<Link to="/about" activeClassName="active" onClick={this._toggleMenu}>
+							<Link to="/" activeClassName="active" onClick={this._toggleMenu}>
 								Home
 							</Link>
 						</li>
 						<li className="menu-item">
-							<Link to="/projects" activeClassName="active" onClick={this._toggleMenu}>
+							<Link to="/about" activeClassName="active" onClick={this._toggleMenu}>
 								About
 							</Link>
 						</li>
 						<li className="menu-item">
-							<Link to="/publications" activeClassName="active" onClick={this._toggleMenu}>
+							<Link to="/resources" activeClassName="active" onClick={this._toggleMenu}>
 								Resources
 							</Link>
 						</li>
 						<li className="menu-item">
-							<Link to="/careers" activeClassName="active" onClick={this._toggleMenu}>
+							<Link to="/events" activeClassName="active" onClick={this._toggleMenu}>
 								Events
 							</Link>
 						</li>
 						<li className="menu-item">
-							<Link to="/donate" activeClassName="active" onClick={this._toggleMenu}>
+							<Link to="/contact" activeClassName="active" onClick={this._toggleMenu}>
 								Contact
 							</Link>
 						</li>

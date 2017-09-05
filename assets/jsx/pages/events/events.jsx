@@ -5,7 +5,7 @@ import Svg from "../../components/svg";
 import Splash from "../../components/splash";
 import Meta from "../../components/meta";
 
-export default class Home extends React.Component {
+export default class Events extends React.Component {
 	state = {
 		active: false,
 		page: {}
@@ -18,16 +18,11 @@ export default class Home extends React.Component {
 
 	render() {
 		let { data } = this.state.page
-		let metaTitle = "Indus Action";
-		let metaDescription =
-			"Indus Action’s low-cost, high-stake policy implementation campaigns like Project Eklavya nurture existing leadership within Community and Partner Entrepreneurs";
-		let metaImage = window.location.origin + "/img/og.png";
 		let splashImage = (data) ? data.splash : "/img/home/bg.jpg"
-		let splashTitle = (data) ? data.basic.splashHeader : "Achieve equitable opportunity for every Indian"
+		let splashTitle = (data) ? data.basic.splashHeader : "Events"
 
 		return (
-			<main className={"home " + (!this.state.active || "active")}>
-				<Meta title={metaTitle} description={metaDescription} image={metaImage} />
+			<main className={"events " + (!this.state.active || "active")}>
 				<Splash
 					onLoad={e => this.setState({ active: true })}
 					bg={splashImage}

@@ -21,7 +21,7 @@ export default class Splash extends React.Component {
 				<img src={this.props.bg} alt={this.props.title} className="splash-bg" />
 				<div className="splash-text">
 					<h1>{this.props.title}</h1>
-					<h3>{this.props.subTitle || ""}</h3>
+					<h2>{this.props.subTitle || ""}</h2>
 				</div>
 			</section>
 		);

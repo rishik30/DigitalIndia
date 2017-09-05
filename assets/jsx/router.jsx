@@ -2,6 +2,10 @@ import React 			from 'react'
 
 import App 				from './app'
 import Home 			from './pages/home/home';
+import About 			from './pages/about/about';
+import Resources 		from './pages/resources/resources';
+import Events 			from './pages/events/events';
+import Contact 			from './pages/contact/contact';
 
 import {
 	browserHistory,
@@ -13,8 +17,12 @@ import {
 
 const routes = (
 	<Router history={browserHistory}>
-		<Route path="/" component={App}>
-			<IndexRoute 					component={Home} 			onEnter={onEnter}/>
+		<Route 			 					component={App}>
+			<Route		path="/" 			component={Home} 		onEnter={onEnter}/>
+			<Route		path="/about"		component={About}		onEnter={onEnter}/>
+			<Route		path="/resources"	component={Resources}	onEnter={onEnter}/>
+			<Route		path="/events"		component={Events}		onEnter={onEnter}/>
+			<Route		path="/contact"		component={Contact}		onEnter={onEnter}/>
 		</Route>
 	</Router>
 )
