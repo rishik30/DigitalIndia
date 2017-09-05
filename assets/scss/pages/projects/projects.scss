@@ -1,0 +1,14 @@
+@import "../../base";
+
+.projects {
+    @import "./project-eklavya";
+    @import "./other-projects";
+    .splash {
+        .splash-card {
+            background-color: $color_blue;
+            p {
+                color: #FFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.donate {
+    width: 100%;
+    position: relative;
+	padding: $padding1 calc( 5% + #{$padding1});
+	box-sizing: border-box;
+    background-image: url(/img/home/home_donate_splash.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    @media(max-width: 800px) {
+        padding: $padding1 $padding1*0.5;
+    }
+    // &:before {
+    //     @extend .pseudo-base;
+    //     background-color: rgba($color_black, 0.9);
+    //     z-index: -1;
+    // }
+
+    .row {
+        display: flex;
+		margin-bottom: 48px;
+        flex-wrap: wrap;
+        .grid {
+            flex: 1;
+            display: flex;
+			align-items: center;
+			justify-content: center;
+            margin: 20px 10px;
+            flex-basis: 180px;
+            svg {
+                width: 80px;
+                height: 80px;
+				margin-right: 32px;
+            }
+            .content {
+                color: $color_white;
+                p {
+                    text-transform: uppercase;
+					font-size: $p1;
+					line-height: 1;
+                    em {
+                        font-weight: 700;
+                    }
+                }
+                h1 {
+					// line-height: 0.5;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    button {
+        position: relative;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+		margin: 0;
+    }
+}

@@ -1,0 +1,26 @@
+.form {
+    padding: $padding1 0;
+    background-color: #F5FAFF;
+
+    p {
+        text-align: center;
+        font-size: $h4;
+        max-width: 100%;
+        margin-bottom: 50px;
+        padding: 0 $padding1*0.5;
+    }
+    form {
+        max-width: 850px;
+        margin: 0 auto;
+        textarea {
+            width:95%;
+            height: 150px;
+        }
+        button {
+            background-color: rgba($color_blue, 0.2);
+            display: block;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+    }
+}

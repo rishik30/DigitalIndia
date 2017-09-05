@@ -1,0 +1,16 @@
+@import "../../base";
+
+.introduction {
+    h2 {
+		color: $color_blue;
+		margin-bottom: 32px;
+	}
+	p {
+		font-size: $h3;
+		margin-bottom: 32px;
+	}
+	button {
+		margin: 0;
+        // padding: 10px 15px;
+	}
+}

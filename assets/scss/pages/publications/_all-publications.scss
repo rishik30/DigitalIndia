@@ -1,0 +1,101 @@
+.all-publications {
+    position: relative;
+    z-index: 3;
+    transform: translateY(-200px);
+    .year {
+        width: 160px;
+        height: 60px;
+        background-color: $color_blue;
+        margin-bottom: 60px;
+        h2 {
+            color: #FFF;
+            padding: 10px 20px;
+        }
+    }
+
+    .articles {
+        width: auto;
+        display: flex;
+        padding-bottom: 48px;
+        padding: 0 2 * $padding1;
+        // overflow-x: scroll;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &.active .report {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+
+        @media(max-width: 780px) {
+            padding: 0 $padding1;
+        }
+        @media(max-width: 500px) {
+            padding: 0 32px;
+        }
+        .report {
+            flex: 1;
+            flex-basis: 600px;
+            margin: 10px;
+            min-width: 250px;
+            width: 100%;
+            min-height: 250px;
+            // max-width: 300px;
+            background-color: $color_white;
+            display: flex;
+            box-shadow: 0 5px 10px 0 rgba(1,1,1,0.1);
+            transform: translate3d(0,20px,0);
+            opacity: 0;
+            transition-delay: 0.5s;
+            transition: 0.4s $ease-in-out-quint;
+            &:nth-child(2n) {
+              transition-delay: 0.2s;
+            }
+            .image {
+              position: relative;
+              width: 200px;
+              min-width: 200px;
+              height: auto;
+              flex-basis: 200px;
+              background-color: #EEE;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                margin: 0;
+              }
+            }
+            .content {
+                padding: 32px 32px;
+                height: auto;
+                margin-top: -3px;
+                h4 {
+                    margin-bottom: 16px;
+                }
+                p {
+                    // color: $color_grey;
+                    margin-bottom: 40px;
+                    font-weight: 500;
+
+                }
+                a {
+                    font-family: $font_header;
+                    text-transform: uppercase;
+                    color: $color_blue;
+                    margin-bottom: 20px;
+                    font-size: $p3;
+                    font-weight: 500;
+                }
+            }
+            @media(max-width: 600px) {
+                flex-direction: column;
+                .image {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

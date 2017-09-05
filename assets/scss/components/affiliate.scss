@@ -1,0 +1,30 @@
+@import "../base";
+
+.affiliate {
+	display: block !important;
+	background-color: #fff;
+	box-shadow: 0 2px 14px 0 rgba(1,1,1,0.1);
+	text-align: center;
+	padding-bottom: 0 !important;
+	padding-top: $padding1 !important;
+	h2 {
+		color: $color_red;
+		font-weight: 300;
+		text-transform: uppercase;
+		padding: 8px;
+		margin-bottom: 8px;
+		strong {
+			font-weight: 800;
+		}
+	}
+	h3 {
+		color: $color_grey;
+		opacity: 0.8;
+		margin-bottom: $padding1;
+	}
+	button {
+		width: 100%;
+		padding: 24px;
+		background-color: $color_red;
+	}
+}

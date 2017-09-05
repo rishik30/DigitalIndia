@@ -1,0 +1,53 @@
+.inclusive-india {
+    width: 100%;
+	padding: $padding1 calc( 5% + #{$padding1});
+	box-sizing: border-box;
+    @media(max-width: 800px) {
+        padding: $padding1 $padding1*0.5;
+    }
+    .title {
+        color: $color_blue;
+        text-align: center;
+		margin-bottom: 16px;
+    }
+
+    .sub-title {
+        max-width: 900px;
+        margin: 0 auto;
+        margin-bottom: 64px;
+        color: $color_text;
+        text-align: center;
+        font-size: $p1;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .grid {
+            flex: 1;
+            @extend .flex-center;
+            flex-direction: column;
+            flex-basis: 205px;
+            margin: 20px 0;
+            svg {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 20px;
+            }
+            .head {
+                color: $color_text;
+                text-transform: capitalize;
+                font-size: $h3;
+                font-weight: 500;
+                text-align: center;
+            }
+            .count {
+				font-family: $font_header;
+                color: $color_blue;
+                font-weight: 700;
+                font-size: $h2;
+            }
+        }
+    }
+}

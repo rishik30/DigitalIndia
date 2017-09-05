@@ -1,0 +1,14 @@
+node modules directory
+node_modules
+
+#bower
+bower_components
+
+#build files
+public/*.js
+public/*.html
+public/*.css
+public/*/*.js
+public/*/*.css
+
+.DS_Store

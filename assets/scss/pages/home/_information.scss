@@ -1,0 +1,74 @@
+.information {
+    width: 100%;
+    display: flex;
+
+    .article {
+        flex: 1;
+        position: relative;
+        padding: $padding1 calc( #{$padding1} + 5% );
+        @extend .flex-center;
+        background-size: cover;
+        background-position: 100% 100%;
+        @media(max-width: 900px) {
+            padding: calc(16px + 5%) 30px;
+        }
+        &:nth-child(1) {
+            margin-right: 5px;
+            background-image: url('/img/home/mission-image.jpg');
+        }
+        &:nth-child(2) {
+            background-image: url('/img/home/vision-image.jpg');
+        }
+        &:before {
+            @extend .pseudo-base;
+            background-color: rgba($color_black, 0.5);
+            z-index: 0;
+        }
+
+        .icon {
+			text-align: right;
+			margin-right: 48px;
+            z-index: 1;
+            svg {
+                width: 128px;
+                height: 128px;
+            }
+            @media(max-width: 900px) {
+                margin-right: 24px;
+                svg {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+
+        .content {
+            z-index: 1;
+            // margin-left: auto;
+            color: $color_white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: left;
+            h2 {
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+            p {
+				font-size: $h3;
+                color: #FFF;
+            }
+        }
+    }
+    @media(max-width: 600px) {
+        flex-direction: column;
+        .article {
+            margin-bottom: 3px;
+            &:nth-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+	"@context": "http://schema.org",
+	"@type": "LocalBusiness",
+	"name": "",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "",
+		"addressLocality": "",
+		"addressRegion": "",
+		"postalCode": ""
+	},
+	"telephone": ""
+}

@@ -1,0 +1,57 @@
+@import "../base";
+
+form {
+    margin-top: 10px;
+    label {
+        display: block;
+        font-family: $font_header;
+        font-size: $p1;
+        font-weight: 700;
+        color: $color_blue;
+    }
+    .line-input {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 20px 50px;
+        margin-right: 30px;
+        @media(max-width: 450px) {
+            margin-left: $padding1*0.5;
+            margin-right: $padding1*0.5;
+        }
+        input {
+            background-color: transparent;
+            border: 2px solid $color_blue;
+            padding: 15px;
+            min-width: 300px;
+            margin-top: 10px;
+            font-size: $p1;
+            outline: none;
+            &:placeholder {
+                color: #EEE;
+            }
+        }
+    }
+    .multi-line-input {
+        margin: 20px 50px;
+        vertical-align: middle;
+        @media(max-width: 450px) {
+            margin-left: $padding1*0.5;
+            margin-right: $padding1*0.5;
+        }
+        textarea {
+            background-color: transparent;
+            border: 2px solid $color_blue;
+            padding: 15px;
+            min-width: 300px;
+            max-width: 850px;
+            margin-top: 10px;
+            font-size: $p1;
+            width: 100%;
+            min-height: 200px;
+            outline: none;
+            &:placeholder {
+                color: #EEE;
+            }
+        }
+    }
+}

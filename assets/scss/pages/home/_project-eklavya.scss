@@ -1,0 +1,36 @@
+@import "../../base";
+
+.project-eklavya {
+    h2 {
+		color: $color_blue;
+		margin-bottom: 32px;
+	}
+	p {
+		font-size: $h3;
+		margin-bottom: 32px;
+	}
+	button {
+		margin: 0;
+	}
+	.video {
+		width: 100%;
+		height: 100%;
+        iframe {
+            position: relative;
+            z-index: 4;
+        }
+        @media(max-width: 800px) {
+            iframe {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        @media(max-width: 500px) {
+            margin: 0 auto;
+            iframe {
+                width: 300px;
+                height: 300px;
+            }
+        }
+	}
+}

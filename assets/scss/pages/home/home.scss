@@ -1,0 +1,30 @@
+
+.home {
+	@import "./introduction";
+	@import "./information";
+	@import "./project-eklavya";
+	@import "./latest-publications";
+	@import "./inclusive-india";
+	@import "./donate";
+    // margin-top: 70px;
+
+	.splash {
+		width: 100%;
+		// height: 100vh;
+    .splash-text {
+      left: 7% !important;
+      width: 50% !important;
+      transform: translate3d(0, -50%, 0);
+      h1 {
+        text-align: left;
+      }
+      @media(max-width: 680px) {
+        left: calc(5% + #{$padding1});
+        width: 65%;
+        h1 {
+          padding: 0;
+        }
+      }
+    }
+	}
+}

@@ -1,0 +1,11 @@
+doctype html
+include ./includes/header
+body
+	if (!production)
+		link(rel="stylesheet", href="/css/style.css")
+	else
+		link(rel="stylesheet", href="/css/style.min.css", lazyload)
+	#ia
+		if (reactString)
+			| !{reactString}
+	include ./includes/footer

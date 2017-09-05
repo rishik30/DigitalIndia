@@ -1,0 +1,30 @@
+head
+	meta(charset="utf-8")
+
+	//- Set the viewport width to device width for mobile
+	meta(name="viewport", content="width=device-width")
+	meta(name="viewport", content="width=device-width,user-scalable=no")
+
+	//- Favicons
+	link(rel="apple-touch-icon", sizes="180x180", href="/img/favicons/apple-touch-icon.png?v=XBr8BXoypz")
+	link(rel="icon", type="image/png", href="/img/favicons/favicon-32x32.png?v=XBr8BXoypz", sizes="32x32")
+	link(rel="icon", type="image/png", href="/img/favicons/favicon-16x16.png?v=XBr8BXoypz", sizes="16x16")
+	link(rel="manifest", href="/img/favicons/manifest.json?v=XBr8BXoypz")
+	link(rel="mask-icon", href="/img/favicons/safari-pinned-tab.svg?v=XBr8BXoypz", color="#5bbad5")
+	link(rel="shortcut icon", href="/img/favicons/favicon.ico?v=XBr8BXoypz")
+	meta(name="msapplication-config", content="/img/favicons/browserconfig.xml?v=XBr8BXoypz")
+	meta(name="theme-color", content="#ffffff")
+
+	title Indus Action
+
+	if initialState
+		script(type='text/javascript').
+			window.__REACT_RESOLVER_PAYLOAD__ = !{JSON.stringify(initialState)}
+
+	//-google analytics
+	//- include analytics
+
+	if head
+		| !{head.title}
+		| !{head.meta}
+		| !{head.link}

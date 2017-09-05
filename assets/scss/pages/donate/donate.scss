@@ -1,0 +1,16 @@
+@import "../../base";
+
+.donate {
+    @import "./how-can-you-contribute";
+    @import "./support-us";
+    @import "../home/inclusive-india";
+    @import "../home/donate";
+    .splash {
+        .splash-card {
+            background-color: $color_blue;
+            p {
+                color: #FFF;
+            }
+        }
+    }
+}

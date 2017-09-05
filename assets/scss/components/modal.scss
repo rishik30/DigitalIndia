@@ -1,0 +1,198 @@
+@import "../base";
+
+.modal {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	pointer-events: none;
+	&.active {
+		pointer-events: auto;
+		.overlay {
+			opacity: 0.95;
+		}
+		.modal-content {
+			transform: scale3d(1,1,1);
+			opacity: 1;
+		}
+		.cross-icon {
+			transform: translate3d(0,0,0);
+		}
+	}
+
+	&.disabled {
+		display: none;
+	}
+
+
+	.overlay {
+		content: '';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: darken($color_blue, 5);
+		transition: 1s $ease-out-quint;
+	}
+
+	.cross-icon {
+		// display: none;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		right: 20px;
+		top: 18px;
+		cursor: pointer;
+	}
+
+	.modal-content {
+		position: relative;
+		width: 90vw;
+		min-width: 400px;
+		height: auto;
+		min-height: 300px;
+		max-height: 100vh;
+		margin-top: 5vh;
+		background-color: #FFF;
+		transform: scale3d(0.9,0.9,1);
+		opacity: 0;
+		transition: 0.3s $ease-out-quint;
+		// padding: 0 30px;
+		overflow-y: scroll;
+		overflow-x: visible;
+		padding-bottom: 0px;
+
+		.center {
+			text-align: center;
+			p.default {
+				margin: 20px auto;
+			}
+		}
+
+		.project {
+			padding: $padding1;
+			h2 {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+      &.pen > p {
+        padding: 0 $padding1;
+        a {
+          color: $color_blue;
+        }
+        @media(max-width: 700px) {
+          padding: 0 $padding1*0.5;
+        }
+        @media(max-width: 580px) {
+          padding: 0;
+        }
+      }
+      .profiles {
+        padding: $padding1;
+        @media(max-width: 700px) {
+          padding: $padding1 $padding1*0.5;
+        }
+        @media(max-width: 580px) {
+          padding: $padding1 0;
+        }
+        h3 {
+          font-size: $h2;
+          text-align: center;
+          color: $color_blue_bright;
+          margin-bottom: $padding1;
+        }
+        .member {
+            margin: 16px 0;
+            flex-basis: 300px;
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 5px 10px 0 rgba(1,1,1,0.1);
+            flex-wrap: wrap;
+            .image {
+              position: relative;
+              flex-basis: 200px;
+              width: 200px;
+              align-self: stretch;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .text {
+              flex: 1;
+              min-width: 160px;
+              padding: 32px;
+              justify-content: space-between;
+              span {
+                display: block;
+                margin-bottom: 4px;
+                font-size: $p4;
+                opacity: 0.3;
+                &.text-name {
+                  font-size: $h4;
+                  font-family: $font_header;
+                  color: $color_blue;
+                  opacity: 1;
+                  margin-bottom: 20px;
+                }
+                &.text-short {
+                  font-size: $p2;
+                  font-family: $font_body;
+                  color: $color_black;
+                  opacity: 0.6;
+                  padding-right: 16px;
+                  line-height: 1.5;
+                }
+              }
+            }
+            @media(max-width: 830px) {
+                flex-direction: column;
+                .image {
+                    width: 100%;
+                    height: 300px;
+                    img {
+                        // object-fit: contain;
+                    }
+                }
+            }
+        }
+      }
+		}
+
+		.success-modal, article {
+			padding: $padding1;
+			h2 {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			p {
+				text-align: center;
+			}
+			.modal-header {
+				h2 {
+					text-align: center;
+					margin-bottom: 30px;
+				}
+			}
+			.error-list {
+				li {
+					text-align: center;
+					margin: 5px;
+				}
+			}
+		}
+
+	}
+}

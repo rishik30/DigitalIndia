@@ -1,0 +1,108 @@
+@import "../../base";
+
+.careers {
+    .splash {
+        .splash-card {
+            background-color: $color_blue;
+            p {
+                color: #FFF;
+            }
+        }
+    }
+    .content {
+        margin-top: 180px;
+        margin-bottom: 100px;
+        position: relative;
+
+        .opening-quote svg {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: -20px;
+            left: 18%;
+            @media(max-width: 1380px) {
+                left: 16%;
+            }
+            @media(max-width: 1280px) {
+                left: 13%;
+            }
+            @media(max-width: 1201px) {
+                left: 10%;
+            }
+            @media(max-width: 1060px) {
+                left: 5%;
+            }
+            @media(max-width: 940px) {
+                left: 12%;
+            }
+            @media(max-width: 860px) {
+                left: 9%;
+            }
+            @media(max-width: 720px) {
+                left: 9%;
+            }
+            @media(max-width: 600px) {
+                left: 4%;
+            }
+            @media(max-width: 440px) {
+                top: -30px;
+            }
+
+        }
+        .quote {
+            font-style: italic;
+            line-height: 2;
+            font-size: $h3;
+            // width: 60%;
+            width: 760px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            position: relative;
+            text-align: justify;
+            @media(max-width: 940px) {
+                width: 560px;
+            }
+            @media(max-width: 720px) {
+                width: 430px;
+            }
+            @media(max-width: 620px) {
+                width: 380px;
+            }
+            @media(max-width: 500px) {
+                width: 320px;
+            }
+            @media(max-width: 380px) {
+                width: 270px;
+            }
+            img.closing-quote {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                bottom: 10px;
+                right: 50%;
+                @media(max-width: 1201px) {
+                    right: 60%;
+                    bottom: 0;
+                }
+                @media(max-width: 940px) {
+                    right: 47%;
+                }
+                @media(max-width: 720px) {
+                    right: 15%;
+                }
+                @media(max-width: 600px) {
+                    right: -9%;
+                }
+                @media(max-width: 400px) {
+                    right: -4%;
+                }
+            }
+        }
+        button {
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
